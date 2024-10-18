@@ -10,4 +10,4 @@ class Saldo:
         self.__saldo = nsaldo
 
     def getter(self):
-        return self.saldo
+        return self.__saldo
