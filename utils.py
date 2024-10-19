@@ -13,10 +13,11 @@ class Saldo:
         return self.__saldo
 
 class Cliente:
-    def __init__(self, *kwargs):
-        self.__nome = nome
-        self.__email = email
-        self.__senha = senha
+    def __init__(self, credentials):
+        infos = *credentials
+        self.__nome = infos["nome"]
+        self.__email = infos["email"]
+        self.__senha = infos["senha"]
 
     def get_nome(self, id):
         return self.__nome
