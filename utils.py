@@ -3,7 +3,7 @@ def ler_dinheiro():
     return dinheiro
 
 class Saldo:
-    def __init__(self, saldo):
+    def __init__(self, saldo = 0):
         self.__saldo = saldo
 
     def setter(self, nsaldo):
@@ -19,9 +19,12 @@ class Cliente:
         self.__email = infos["email"]
         self.__senha = infos["senha"]
 
+        __saldo_cliente = Saldo()
+
     def get_nome(self, id):
         return self.__nome
 
     def get_email(self, email):
         return self.__email
+
 
